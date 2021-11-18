@@ -22,5 +22,5 @@ jobs:
           key: ${{ secrets.DEV_PRIV_KEY }}
           script: |
             cd /home/ramperto/tsmedia.cms/ && git pull
-            cd /home/ramperto/tsmedia.cms/ && yarn
+            cd /home/ramperto/tsmedia.cms/ && nvm use v14.8.0 && yarn
             cd /home/ramperto/tsmedia.cms/ && pm2 restart devtsmedia-cms

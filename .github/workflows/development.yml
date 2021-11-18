@@ -1,0 +1,26 @@
+name: DEVELOPMENT Deployment
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  master-tsmedia:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: update
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.DEV_HOST }}
+          username: ${{ secrets.DEV_SSH_USER }}
+          port: ${{ secrets.DEV_PORT }}
+          key: ${{ secrets.DEV_PRIV_KEY }}
+          script: |
+            cd /home/ramperto/tsmedia.cms/ && git pull
+            cd /home/ramperto/tsmedia.cms/ && yarn
+            cd /home/ramperto/tsmedia.cms/ && pm2 restart devtsmedia-cms

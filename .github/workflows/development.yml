@@ -1,0 +1,48 @@
+name: DEVELOPMENT Deployment
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  master-tsmedia:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - run: npm install yarn -g
+      - run: yarn
+
+      - name: refresh repository
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.DEV_HOST }}
+          port: ${{ secrets.DEV_PORT }}
+          username: ${{ secrets.DEV_SSH_USER }}
+          key: ${{ secrets.DEV_PRIV_KEY }}
+          script: ${{ secrets.REFRESH_CODE_DEV }}
+
+      - name: Deploy to Dev server
+        uses: easingthemes/ssh-deploy@main
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.DEV_PRIV_KEY }}
+          ARGS: "-rltgoDzvO"
+          SOURCE: "./*"
+          REMOTE_HOST: ${{ secrets.DEV_HOST }}
+          REMOTE_PORT: ${{ secrets.DEV_PORT }}
+          REMOTE_USER: ${{ secrets.DEV_SSH_USER }}
+          TARGET: ${{ secrets.DEV_DIR_TARGET }}
+
+      - name: update
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.DEV_HOST }}
+          username: ${{ secrets.DEV_SSH_USER }}
+          port: ${{ secrets.DEV_PORT }}
+          key: ${{ secrets.DEV_PRIV_KEY }}
+          script: |
+            sudo chown -R ramperto:www-data /home/ramperto/tsmedia.cms
+            cd /home/ramperto/tsmedia.cms/ && pm2 restart devtsmedia-cms

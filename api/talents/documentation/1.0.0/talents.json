@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/restaurants": {
+    "/talents": {
       "get": {
         "deprecated": false,
-        "description": "Find all the restaurants's records",
+        "description": "Find all the talents's records",
         "responses": {
           "200": {
-            "description": "Retrieve restaurants document(s)",
+            "description": "Retrieve talents document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Restaurants"
+                    "$ref": "#/components/schemas/Talents"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Restaurants"
+          "Talents"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new restaurants record",
+        "description": "Create a new talents record",
         "responses": {
           "200": {
-            "description": "Retrieve restaurants document(s)",
+            "description": "Retrieve talents document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Restaurants"
+                  "$ref": "#/components/schemas/Talents"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Restaurants"
+          "Talents"
         ],
         "requestBody": {
           "description": "",
@@ -247,20 +247,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewRestaurants"
+                "$ref": "#/components/schemas/NewTalents"
               }
             }
           }
         }
       }
     },
-    "/restaurants/count": {
+    "/talents/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the number of restaurants documents",
+        "description": "Retrieve the number of talents documents",
         "responses": {
           "200": {
-            "description": "Retrieve restaurants document(s)",
+            "description": "Retrieve talents document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -306,22 +306,22 @@
         },
         "summary": "",
         "tags": [
-          "Restaurants"
+          "Talents"
         ],
         "parameters": []
       }
     },
-    "/restaurants/{id}": {
+    "/talents/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one restaurants record",
+        "description": "Find one talents record",
         "responses": {
           "200": {
-            "description": "Retrieve restaurants document(s)",
+            "description": "Retrieve talents document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Restaurants"
+                  "$ref": "#/components/schemas/Talents"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Restaurants"
+          "Talents"
         ],
         "parameters": [
           {
@@ -376,14 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single restaurants record",
+        "description": "Update a single talents record",
         "responses": {
           "200": {
-            "description": "Retrieve restaurants document(s)",
+            "description": "Retrieve talents document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Restaurants"
+                  "$ref": "#/components/schemas/Talents"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Restaurants"
+          "Talents"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewRestaurants"
+                "$ref": "#/components/schemas/NewTalents"
               }
             }
           }
@@ -449,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single restaurants record",
+        "description": "Delete a single talents record",
         "responses": {
           "200": {
-            "description": "deletes a single restaurants based on the ID supplied",
+            "description": "deletes a single talents based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Restaurants"
+          "Talents"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Restaurants": {
+      "Talents": {
         "required": [
           "id"
         ],
@@ -525,105 +525,75 @@
           "Name": {
             "type": "string"
           },
-          "Assets": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "Content": {
-                  "type": "string"
-                },
-                "Image": {
-                  "required": [
-                    "id",
-                    "name",
-                    "hash",
-                    "mime",
-                    "size",
-                    "url",
-                    "provider"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "alternativeText": {
-                      "type": "string"
-                    },
-                    "caption": {
-                      "type": "string"
-                    },
-                    "width": {
-                      "type": "integer"
-                    },
-                    "height": {
-                      "type": "integer"
-                    },
-                    "formats": {
-                      "type": "object"
-                    },
-                    "hash": {
-                      "type": "string"
-                    },
-                    "ext": {
-                      "type": "string"
-                    },
-                    "mime": {
-                      "type": "string"
-                    },
-                    "size": {
-                      "type": "number"
-                    },
-                    "url": {
-                      "type": "string"
-                    },
-                    "previewUrl": {
-                      "type": "string"
-                    },
-                    "provider": {
-                      "type": "string"
-                    },
-                    "provider_metadata": {
-                      "type": "object"
-                    },
-                    "related": {
-                      "type": "string"
-                    },
-                    "created_by": {
-                      "type": "string"
-                    },
-                    "updated_by": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "To": {
-            "type": "string"
-          },
-          "Href": {
-            "type": "string"
-          },
-          "Type": {
-            "type": "string",
-            "enum": [
-              "Programs",
-              "Channels"
-            ]
-          },
           "Description": {
             "type": "string"
+          },
+          "Image": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -631,107 +601,10 @@
           }
         }
       },
-      "NewRestaurants": {
+      "NewTalents": {
         "properties": {
           "Name": {
             "type": "string"
-          },
-          "Assets": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "Content": {
-                  "type": "string"
-                },
-                "Image": {
-                  "required": [
-                    "id",
-                    "name",
-                    "hash",
-                    "mime",
-                    "size",
-                    "url",
-                    "provider"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "alternativeText": {
-                      "type": "string"
-                    },
-                    "caption": {
-                      "type": "string"
-                    },
-                    "width": {
-                      "type": "integer"
-                    },
-                    "height": {
-                      "type": "integer"
-                    },
-                    "formats": {
-                      "type": "object"
-                    },
-                    "hash": {
-                      "type": "string"
-                    },
-                    "ext": {
-                      "type": "string"
-                    },
-                    "mime": {
-                      "type": "string"
-                    },
-                    "size": {
-                      "type": "number"
-                    },
-                    "url": {
-                      "type": "string"
-                    },
-                    "previewUrl": {
-                      "type": "string"
-                    },
-                    "provider": {
-                      "type": "string"
-                    },
-                    "provider_metadata": {
-                      "type": "object"
-                    },
-                    "related": {
-                      "type": "string"
-                    },
-                    "created_by": {
-                      "type": "string"
-                    },
-                    "updated_by": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "To": {
-            "type": "string"
-          },
-          "Href": {
-            "type": "string"
-          },
-          "Type": {
-            "type": "string",
-            "enum": [
-              "Programs",
-              "Channels"
-            ]
           },
           "Description": {
             "type": "string"
@@ -752,7 +625,7 @@
   },
   "tags": [
     {
-      "name": "Restaurants"
+      "name": "Talents"
     }
   ]
 }

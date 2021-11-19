@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "restaurants",
   "info": {
-    "name": "restaurants",
+    "name": "Programs",
     "description": ""
   },
   "options": {
@@ -12,13 +12,29 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "Name": {
       "type": "string"
     },
     "Assets": {
       "type": "component",
       "repeatable": true,
       "component": "assets.assets"
+    },
+    "To": {
+      "type": "string"
+    },
+    "Href": {
+      "type": "string"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Programs",
+        "Channels"
+      ]
+    },
+    "Description": {
+      "type": "text"
     }
   }
 }

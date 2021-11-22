@@ -1,17 +1,19 @@
 {
-  "collectionName": "components_assets_logos",
+  "collectionName": "components_assets_channels",
   "info": {
-    "name": "Brands",
-    "icon": "images",
-    "description": ""
+    "name": "Channels",
+    "icon": "th-list"
   },
   "options": {},
   "attributes": {
     "Name": {
       "type": "string"
     },
+    "Link": {
+      "type": "string"
+    },
     "Logo": {
-      "model": "file",
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images",

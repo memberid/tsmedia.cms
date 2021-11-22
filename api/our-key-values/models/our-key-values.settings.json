@@ -2,7 +2,7 @@
   "kind": "singleType",
   "collectionName": "our_key_values",
   "info": {
-    "name": "Partners - Our Key Values",
+    "name": "Partners",
     "description": ""
   },
   "options": {
@@ -12,10 +12,23 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Parameters": {
+    "OurKeyValues": {
       "type": "component",
       "repeatable": true,
       "component": "assets.feature-list"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Brands": {
+      "type": "component",
+      "repeatable": true,
+      "component": "assets.logo"
+    },
+    "Channels": {
+      "type": "component",
+      "repeatable": true,
+      "component": "assets.channels"
     }
   }
 }

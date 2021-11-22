@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_socmeds_social_medias",
+  "info": {
+    "name": "Social Media",
+    "icon": "list-ul"
+  },
+  "options": {},
+  "attributes": {
+    "Icon": {
+      "type": "string"
+    },
+    "Link": {
+      "type": "string"
+    }
+  }
+}

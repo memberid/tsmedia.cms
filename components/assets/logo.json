@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_assets_logos",
+  "info": {
+    "name": "logo",
+    "icon": "images",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "Link": {
+      "type": "string"
+    }
+  }
+}

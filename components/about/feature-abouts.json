@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_about_feature_abouts",
+  "info": {
+    "name": "Feature Abouts",
+    "icon": "list-alt"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    }
+  }
+}

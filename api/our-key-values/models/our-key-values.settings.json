@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "our_key_values",
+  "info": {
+    "name": "Partners - Our Key Values",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Parameters": {
+      "type": "component",
+      "repeatable": true,
+      "component": "assets.feature-list"
+    }
+  }
+}

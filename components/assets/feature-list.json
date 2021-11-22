@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_assets_feature_lists",
+  "info": {
+    "name": "Feature List",
+    "icon": "list"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Value": {
+      "type": "string"
+    }
+  }
+}

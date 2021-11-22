@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "social_medias",
+  "info": {
+    "name": "Social Media"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SocialMedia": {
+      "type": "component",
+      "repeatable": true,
+      "component": "socmeds.social-media"
+    }
+  }
+}

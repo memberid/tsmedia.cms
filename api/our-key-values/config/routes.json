@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/our-key-values",
+      "handler": "our-key-values.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/our-key-values",
+      "handler": "our-key-values.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/our-key-values",
+      "handler": "our-key-values.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

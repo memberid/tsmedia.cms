@@ -522,10 +522,10 @@
           "id": {
             "type": "string"
           },
-          "Name": {
+          "name": {
             "type": "string"
           },
-          "Assets": {
+          "assets": {
             "type": "array",
             "items": {
               "type": "object",
@@ -536,10 +536,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Content": {
+                "content": {
                   "type": "string"
                 },
-                "Image": {
+                "image": {
                   "required": [
                     "id",
                     "name",
@@ -609,20 +609,20 @@
               }
             }
           },
-          "To": {
+          "to": {
             "type": "string"
           },
-          "Href": {
+          "href": {
             "type": "string"
           },
-          "Type": {
+          "type": {
             "type": "string",
             "enum": [
               "Programs",
               "Channels"
             ]
           },
-          "Description": {
+          "description": {
             "type": "string"
           },
           "published_at": {
@@ -633,10 +633,10 @@
       },
       "NewRestaurants": {
         "properties": {
-          "Name": {
+          "name": {
             "type": "string"
           },
-          "Assets": {
+          "assets": {
             "type": "array",
             "items": {
               "type": "object",
@@ -647,10 +647,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Content": {
+                "content": {
                   "type": "string"
                 },
-                "Image": {
+                "image": {
                   "required": [
                     "id",
                     "name",
@@ -720,20 +720,20 @@
               }
             }
           },
-          "To": {
+          "to": {
             "type": "string"
           },
-          "Href": {
+          "href": {
             "type": "string"
           },
-          "Type": {
+          "type": {
             "type": "string",
             "enum": [
               "Programs",
               "Channels"
             ]
           },
-          "Description": {
+          "description": {
             "type": "string"
           },
           "published_at": {

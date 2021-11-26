@@ -2,14 +2,15 @@
   "collectionName": "components_about_feature_abouts",
   "info": {
     "name": "Feature Abouts",
-    "icon": "list-alt"
+    "icon": "list-alt",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string"
     },
-    "Description": {
+    "description": {
       "type": "text"
     }
   }

@@ -12,28 +12,28 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string"
     },
-    "Assets": {
+    "assets": {
       "type": "component",
       "repeatable": true,
       "component": "assets.assets"
     },
-    "To": {
+    "to": {
       "type": "string"
     },
-    "Href": {
+    "href": {
       "type": "string"
     },
-    "Type": {
+    "type": {
       "type": "enumeration",
       "enum": [
         "Programs",
         "Channels"
       ]
     },
-    "Description": {
+    "description": {
       "type": "text"
     }
   }

@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "talents",
   "info": {
-    "name": "Talents"
+    "name": "Talents",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,13 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string"
     },
-    "Description": {
+    "description": {
       "type": "text"
     },
-    "Image": {
+    "image": {
       "model": "file",
       "via": "related",
       "allowedTypes": [

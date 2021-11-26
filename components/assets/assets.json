@@ -7,10 +7,10 @@
   },
   "options": {},
   "attributes": {
-    "Content": {
+    "content": {
       "type": "text"
     },
-    "Image": {
+    "image": {
       "model": "file",
       "via": "related",
       "allowedTypes": [

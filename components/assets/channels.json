@@ -2,17 +2,18 @@
   "collectionName": "components_assets_channels",
   "info": {
     "name": "Channels",
-    "icon": "th-list"
+    "icon": "th-list",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string"
     },
-    "Link": {
+    "link": {
       "type": "string"
     },
-    "Logo": {
+    "logo": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [

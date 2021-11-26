@@ -323,7 +323,7 @@
           "id": {
             "type": "string"
           },
-          "WhatWeDo": {
+          "whatWeDo": {
             "type": "array",
             "items": {
               "type": "object",
@@ -334,10 +334,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Title": {
+                "title": {
                   "type": "string"
                 },
-                "Description": {
+                "description": {
                   "type": "string"
                 }
               }
@@ -345,10 +345,10 @@
             "minItems": 4,
             "maxItems": 4
           },
-          "Title": {
+          "title": {
             "type": "string"
           },
-          "Description": {
+          "description": {
             "type": "string"
           },
           "published_at": {
@@ -359,7 +359,7 @@
       },
       "NewAbout-us": {
         "properties": {
-          "WhatWeDo": {
+          "whatWeDo": {
             "type": "array",
             "items": {
               "type": "object",
@@ -370,10 +370,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Title": {
+                "title": {
                   "type": "string"
                 },
-                "Description": {
+                "description": {
                   "type": "string"
                 }
               }
@@ -381,10 +381,10 @@
             "minItems": 4,
             "maxItems": 4
           },
-          "Title": {
+          "title": {
             "type": "string"
           },
-          "Description": {
+          "description": {
             "type": "string"
           },
           "published_at": {

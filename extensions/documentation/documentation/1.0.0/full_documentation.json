@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/22/2021 5:15:34 PM"
+    "x-generation-date": "11/26/2021 4:29:52 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4552,7 +4552,7 @@
           "id": {
             "type": "string"
           },
-          "WhatWeDo": {
+          "whatWeDo": {
             "type": "array",
             "items": {
               "type": "object",
@@ -4563,10 +4563,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Title": {
+                "title": {
                   "type": "string"
                 },
-                "Description": {
+                "description": {
                   "type": "string"
                 }
               }
@@ -4574,10 +4574,10 @@
             "minItems": 4,
             "maxItems": 4
           },
-          "Title": {
+          "title": {
             "type": "string"
           },
-          "Description": {
+          "description": {
             "type": "string"
           },
           "published_at": {
@@ -4588,7 +4588,7 @@
       },
       "NewAbout-us": {
         "properties": {
-          "WhatWeDo": {
+          "whatWeDo": {
             "type": "array",
             "items": {
               "type": "object",
@@ -4599,10 +4599,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Title": {
+                "title": {
                   "type": "string"
                 },
-                "Description": {
+                "description": {
                   "type": "string"
                 }
               }
@@ -4610,10 +4610,10 @@
             "minItems": 4,
             "maxItems": 4
           },
-          "Title": {
+          "title": {
             "type": "string"
           },
-          "Description": {
+          "description": {
             "type": "string"
           },
           "published_at": {
@@ -4636,16 +4636,16 @@
           "id": {
             "type": "string"
           },
-          "Title": {
+          "title": {
             "type": "string"
           },
-          "Location": {
+          "location": {
             "type": "string"
           },
-          "Email": {
+          "email": {
             "type": "string"
           },
-          "MobilePhone": {
+          "mobilePhone": {
             "type": "string"
           },
           "published_at": {
@@ -4656,16 +4656,16 @@
       },
       "NewContact-us": {
         "properties": {
-          "Title": {
+          "title": {
             "type": "string"
           },
-          "Location": {
+          "location": {
             "type": "string"
           },
-          "Email": {
+          "email": {
             "type": "string"
           },
-          "MobilePhone": {
+          "mobilePhone": {
             "type": "string"
           },
           "published_at": {
@@ -4688,7 +4688,7 @@
           "id": {
             "type": "string"
           },
-          "OurKeyValues": {
+          "ourKeyValues": {
             "type": "array",
             "items": {
               "type": "object",
@@ -4699,19 +4699,19 @@
                 "id": {
                   "type": "string"
                 },
-                "Title": {
+                "title": {
                   "type": "string"
                 },
-                "Value": {
+                "value": {
                   "type": "string"
                 }
               }
             }
           },
-          "Description": {
+          "description": {
             "type": "string"
           },
-          "Brands": {
+          "brands": {
             "type": "array",
             "items": {
               "type": "object",
@@ -4722,10 +4722,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Name": {
+                "name": {
                   "type": "string"
                 },
-                "Logo": {
+                "logo": {
                   "required": [
                     "id",
                     "name",
@@ -4795,7 +4795,7 @@
               }
             }
           },
-          "Channels": {
+          "channels": {
             "type": "array",
             "items": {
               "type": "object",
@@ -4806,13 +4806,13 @@
                 "id": {
                   "type": "string"
                 },
-                "Name": {
+                "name": {
                   "type": "string"
                 },
-                "Link": {
+                "link": {
                   "type": "string"
                 },
-                "Logo": {
+                "logo": {
                   "type": "array",
                   "items": {
                     "required": [
@@ -4893,7 +4893,7 @@
       },
       "NewOur-key-values": {
         "properties": {
-          "OurKeyValues": {
+          "ourKeyValues": {
             "type": "array",
             "items": {
               "type": "object",
@@ -4904,19 +4904,19 @@
                 "id": {
                   "type": "string"
                 },
-                "Title": {
+                "title": {
                   "type": "string"
                 },
-                "Value": {
+                "value": {
                   "type": "string"
                 }
               }
             }
           },
-          "Description": {
+          "description": {
             "type": "string"
           },
-          "Brands": {
+          "brands": {
             "type": "array",
             "items": {
               "type": "object",
@@ -4927,10 +4927,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Name": {
+                "name": {
                   "type": "string"
                 },
-                "Logo": {
+                "logo": {
                   "required": [
                     "id",
                     "name",
@@ -5000,7 +5000,7 @@
               }
             }
           },
-          "Channels": {
+          "channels": {
             "type": "array",
             "items": {
               "type": "object",
@@ -5011,13 +5011,13 @@
                 "id": {
                   "type": "string"
                 },
-                "Name": {
+                "name": {
                   "type": "string"
                 },
-                "Link": {
+                "link": {
                   "type": "string"
                 },
-                "Logo": {
+                "logo": {
                   "type": "array",
                   "items": {
                     "required": [
@@ -5110,10 +5110,10 @@
           "id": {
             "type": "string"
           },
-          "Name": {
+          "name": {
             "type": "string"
           },
-          "Assets": {
+          "assets": {
             "type": "array",
             "items": {
               "type": "object",
@@ -5124,10 +5124,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Content": {
+                "content": {
                   "type": "string"
                 },
-                "Image": {
+                "image": {
                   "required": [
                     "id",
                     "name",
@@ -5197,20 +5197,20 @@
               }
             }
           },
-          "To": {
+          "to": {
             "type": "string"
           },
-          "Href": {
+          "href": {
             "type": "string"
           },
-          "Type": {
+          "type": {
             "type": "string",
             "enum": [
               "Programs",
               "Channels"
             ]
           },
-          "Description": {
+          "description": {
             "type": "string"
           },
           "published_at": {
@@ -5221,10 +5221,10 @@
       },
       "NewRestaurants": {
         "properties": {
-          "Name": {
+          "name": {
             "type": "string"
           },
-          "Assets": {
+          "assets": {
             "type": "array",
             "items": {
               "type": "object",
@@ -5235,10 +5235,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Content": {
+                "content": {
                   "type": "string"
                 },
-                "Image": {
+                "image": {
                   "required": [
                     "id",
                     "name",
@@ -5308,20 +5308,20 @@
               }
             }
           },
-          "To": {
+          "to": {
             "type": "string"
           },
-          "Href": {
+          "href": {
             "type": "string"
           },
-          "Type": {
+          "type": {
             "type": "string",
             "enum": [
               "Programs",
               "Channels"
             ]
           },
-          "Description": {
+          "description": {
             "type": "string"
           },
           "published_at": {
@@ -5344,7 +5344,7 @@
           "id": {
             "type": "string"
           },
-          "SocialMedia": {
+          "socialMedia": {
             "type": "array",
             "items": {
               "type": "object",
@@ -5355,10 +5355,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Icon": {
+                "icon": {
                   "type": "string"
                 },
-                "Link": {
+                "link": {
                   "type": "string"
                 }
               }
@@ -5372,7 +5372,7 @@
       },
       "NewSocial-media": {
         "properties": {
-          "SocialMedia": {
+          "socialMedia": {
             "type": "array",
             "items": {
               "type": "object",
@@ -5383,10 +5383,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Icon": {
+                "icon": {
                   "type": "string"
                 },
-                "Link": {
+                "link": {
                   "type": "string"
                 }
               }
@@ -5412,13 +5412,13 @@
           "id": {
             "type": "string"
           },
-          "Name": {
+          "name": {
             "type": "string"
           },
-          "Description": {
+          "description": {
             "type": "string"
           },
-          "Image": {
+          "image": {
             "required": [
               "id",
               "name",
@@ -5493,10 +5493,10 @@
       },
       "NewTalents": {
         "properties": {
-          "Name": {
+          "name": {
             "type": "string"
           },
-          "Description": {
+          "description": {
             "type": "string"
           },
           "published_at": {

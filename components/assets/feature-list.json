@@ -2,14 +2,15 @@
   "collectionName": "components_assets_feature_lists",
   "info": {
     "name": "Feature List",
-    "icon": "list"
+    "icon": "list",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "Title": {
+    "title": {
       "type": "string"
     },
-    "Value": {
+    "value": {
       "type": "string"
     }
   }

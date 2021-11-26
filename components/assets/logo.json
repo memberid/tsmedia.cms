@@ -7,10 +7,10 @@
   },
   "options": {},
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string"
     },
-    "Logo": {
+    "logo": {
       "model": "file",
       "via": "related",
       "allowedTypes": [

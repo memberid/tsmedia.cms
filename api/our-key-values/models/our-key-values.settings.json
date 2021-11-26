@@ -12,20 +12,20 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "OurKeyValues": {
+    "ourKeyValues": {
       "type": "component",
       "repeatable": true,
       "component": "assets.feature-list"
     },
-    "Description": {
+    "description": {
       "type": "text"
     },
-    "Brands": {
+    "brands": {
       "type": "component",
       "repeatable": true,
       "component": "assets.logo"
     },
-    "Channels": {
+    "channels": {
       "type": "component",
       "repeatable": true,
       "component": "assets.channels"

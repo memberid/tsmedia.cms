@@ -2,14 +2,15 @@
   "collectionName": "components_socmeds_social_medias",
   "info": {
     "name": "Social Media",
-    "icon": "list-ul"
+    "icon": "list-ul",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "Icon": {
+    "icon": {
       "type": "string"
     },
-    "Link": {
+    "link": {
       "type": "string"
     }
   }

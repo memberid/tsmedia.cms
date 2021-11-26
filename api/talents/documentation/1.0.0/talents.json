@@ -522,13 +522,13 @@
           "id": {
             "type": "string"
           },
-          "Name": {
+          "name": {
             "type": "string"
           },
-          "Description": {
+          "description": {
             "type": "string"
           },
-          "Image": {
+          "image": {
             "required": [
               "id",
               "name",
@@ -603,10 +603,10 @@
       },
       "NewTalents": {
         "properties": {
-          "Name": {
+          "name": {
             "type": "string"
           },
-          "Description": {
+          "description": {
             "type": "string"
           },
           "published_at": {

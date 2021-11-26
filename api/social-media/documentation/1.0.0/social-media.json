@@ -323,7 +323,7 @@
           "id": {
             "type": "string"
           },
-          "SocialMedia": {
+          "socialMedia": {
             "type": "array",
             "items": {
               "type": "object",
@@ -334,10 +334,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Icon": {
+                "icon": {
                   "type": "string"
                 },
-                "Link": {
+                "link": {
                   "type": "string"
                 }
               }
@@ -351,7 +351,7 @@
       },
       "NewSocial-media": {
         "properties": {
-          "SocialMedia": {
+          "socialMedia": {
             "type": "array",
             "items": {
               "type": "object",
@@ -362,10 +362,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Icon": {
+                "icon": {
                   "type": "string"
                 },
-                "Link": {
+                "link": {
                   "type": "string"
                 }
               }

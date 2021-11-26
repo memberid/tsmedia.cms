@@ -12,17 +12,17 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "WhatWeDo": {
+    "whatWeDo": {
       "type": "component",
       "repeatable": true,
       "component": "about.feature-abouts",
       "max": 4,
       "min": 4
     },
-    "Title": {
+    "title": {
       "type": "string"
     },
-    "Description": {
+    "description": {
       "type": "text"
     }
   }

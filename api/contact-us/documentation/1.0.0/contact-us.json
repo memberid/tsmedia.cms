@@ -323,16 +323,16 @@
           "id": {
             "type": "string"
           },
-          "Title": {
+          "title": {
             "type": "string"
           },
-          "Location": {
+          "location": {
             "type": "string"
           },
-          "Email": {
+          "email": {
             "type": "string"
           },
-          "MobilePhone": {
+          "mobilePhone": {
             "type": "string"
           },
           "published_at": {
@@ -343,16 +343,16 @@
       },
       "NewContact-us": {
         "properties": {
-          "Title": {
+          "title": {
             "type": "string"
           },
-          "Location": {
+          "location": {
             "type": "string"
           },
-          "Email": {
+          "email": {
             "type": "string"
           },
-          "MobilePhone": {
+          "mobilePhone": {
             "type": "string"
           },
           "published_at": {

@@ -323,7 +323,7 @@
           "id": {
             "type": "string"
           },
-          "OurKeyValues": {
+          "ourKeyValues": {
             "type": "array",
             "items": {
               "type": "object",
@@ -334,19 +334,19 @@
                 "id": {
                   "type": "string"
                 },
-                "Title": {
+                "title": {
                   "type": "string"
                 },
-                "Value": {
+                "value": {
                   "type": "string"
                 }
               }
             }
           },
-          "Description": {
+          "description": {
             "type": "string"
           },
-          "Brands": {
+          "brands": {
             "type": "array",
             "items": {
               "type": "object",
@@ -357,10 +357,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Name": {
+                "name": {
                   "type": "string"
                 },
-                "Logo": {
+                "logo": {
                   "required": [
                     "id",
                     "name",
@@ -430,7 +430,7 @@
               }
             }
           },
-          "Channels": {
+          "channels": {
             "type": "array",
             "items": {
               "type": "object",
@@ -441,13 +441,13 @@
                 "id": {
                   "type": "string"
                 },
-                "Name": {
+                "name": {
                   "type": "string"
                 },
-                "Link": {
+                "link": {
                   "type": "string"
                 },
-                "Logo": {
+                "logo": {
                   "type": "array",
                   "items": {
                     "required": [
@@ -528,7 +528,7 @@
       },
       "NewOur-key-values": {
         "properties": {
-          "OurKeyValues": {
+          "ourKeyValues": {
             "type": "array",
             "items": {
               "type": "object",
@@ -539,19 +539,19 @@
                 "id": {
                   "type": "string"
                 },
-                "Title": {
+                "title": {
                   "type": "string"
                 },
-                "Value": {
+                "value": {
                   "type": "string"
                 }
               }
             }
           },
-          "Description": {
+          "description": {
             "type": "string"
           },
-          "Brands": {
+          "brands": {
             "type": "array",
             "items": {
               "type": "object",
@@ -562,10 +562,10 @@
                 "id": {
                   "type": "string"
                 },
-                "Name": {
+                "name": {
                   "type": "string"
                 },
-                "Logo": {
+                "logo": {
                   "required": [
                     "id",
                     "name",
@@ -635,7 +635,7 @@
               }
             }
           },
-          "Channels": {
+          "channels": {
             "type": "array",
             "items": {
               "type": "object",
@@ -646,13 +646,13 @@
                 "id": {
                   "type": "string"
                 },
-                "Name": {
+                "name": {
                   "type": "string"
                 },
-                "Link": {
+                "link": {
                   "type": "string"
                 },
-                "Logo": {
+                "logo": {
                   "type": "array",
                   "items": {
                     "required": [

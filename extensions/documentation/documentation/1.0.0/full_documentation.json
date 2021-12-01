@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/26/2021 4:29:52 PM"
+    "x-generation-date": "12/01/2021 4:37:28 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -981,19 +981,19 @@
         "parameters": []
       }
     },
-    "/restaurants": {
+    "/programs": {
       "get": {
         "deprecated": false,
-        "description": "Find all the restaurants's records",
+        "description": "Find all the programs's records",
         "responses": {
           "200": {
-            "description": "Retrieve restaurants document(s)",
+            "description": "Retrieve programs document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Restaurants"
+                    "$ref": "#/components/schemas/Programs"
                   }
                 }
               }
@@ -1032,7 +1032,7 @@
         },
         "summary": "",
         "tags": [
-          "Restaurants"
+          "Programs"
         ],
         "parameters": [
           {
@@ -1175,14 +1175,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new restaurants record",
+        "description": "Create a new programs record",
         "responses": {
           "200": {
-            "description": "Retrieve restaurants document(s)",
+            "description": "Retrieve programs document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Restaurants"
+                  "$ref": "#/components/schemas/Programs"
                 }
               }
             }
@@ -1220,7 +1220,7 @@
         },
         "summary": "",
         "tags": [
-          "Restaurants"
+          "Programs"
         ],
         "requestBody": {
           "description": "",
@@ -1228,20 +1228,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewRestaurants"
+                "$ref": "#/components/schemas/NewPrograms"
               }
             }
           }
         }
       }
     },
-    "/restaurants/count": {
+    "/programs/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the number of restaurants documents",
+        "description": "Retrieve the number of programs documents",
         "responses": {
           "200": {
-            "description": "Retrieve restaurants document(s)",
+            "description": "Retrieve programs document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -1287,22 +1287,22 @@
         },
         "summary": "",
         "tags": [
-          "Restaurants"
+          "Programs"
         ],
         "parameters": []
       }
     },
-    "/restaurants/{id}": {
+    "/programs/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one restaurants record",
+        "description": "Find one programs record",
         "responses": {
           "200": {
-            "description": "Retrieve restaurants document(s)",
+            "description": "Retrieve programs document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Restaurants"
+                  "$ref": "#/components/schemas/Programs"
                 }
               }
             }
@@ -1340,7 +1340,7 @@
         },
         "summary": "",
         "tags": [
-          "Restaurants"
+          "Programs"
         ],
         "parameters": [
           {
@@ -1357,14 +1357,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single restaurants record",
+        "description": "Update a single programs record",
         "responses": {
           "200": {
-            "description": "Retrieve restaurants document(s)",
+            "description": "Retrieve programs document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Restaurants"
+                  "$ref": "#/components/schemas/Programs"
                 }
               }
             }
@@ -1402,7 +1402,7 @@
         },
         "summary": "",
         "tags": [
-          "Restaurants"
+          "Programs"
         ],
         "requestBody": {
           "description": "",
@@ -1410,7 +1410,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewRestaurants"
+                "$ref": "#/components/schemas/NewPrograms"
               }
             }
           }
@@ -1430,10 +1430,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single restaurants record",
+        "description": "Delete a single programs record",
         "responses": {
           "200": {
-            "description": "deletes a single restaurants based on the ID supplied",
+            "description": "deletes a single programs based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -1476,7 +1476,7 @@
         },
         "summary": "",
         "tags": [
-          "Restaurants"
+          "Programs"
         ],
         "parameters": [
           {
@@ -5102,7 +5102,7 @@
           }
         }
       },
-      "Restaurants": {
+      "Programs": {
         "required": [
           "id"
         ],
@@ -5193,6 +5193,24 @@
                       "type": "string"
                     }
                   }
+                },
+                "link": {
+                  "type": "string"
+                },
+                "placement": {
+                  "type": "string",
+                  "enum": [
+                    "top",
+                    "center",
+                    "bottom"
+                  ]
+                },
+                "styleClass": {
+                  "type": "string",
+                  "enum": [
+                    "shadow",
+                    "mockup"
+                  ]
                 }
               }
             }
@@ -5219,7 +5237,7 @@
           }
         }
       },
-      "NewRestaurants": {
+      "NewPrograms": {
         "properties": {
           "name": {
             "type": "string"
@@ -5304,6 +5322,24 @@
                       "type": "string"
                     }
                   }
+                },
+                "link": {
+                  "type": "string"
+                },
+                "placement": {
+                  "type": "string",
+                  "enum": [
+                    "top",
+                    "center",
+                    "bottom"
+                  ]
+                },
+                "styleClass": {
+                  "type": "string",
+                  "enum": [
+                    "shadow",
+                    "mockup"
+                  ]
                 }
               }
             }
@@ -5798,7 +5834,7 @@
   },
   "tags": [
     {
-      "name": "Restaurants"
+      "name": "Programs"
     },
     {
       "name": "Talents"

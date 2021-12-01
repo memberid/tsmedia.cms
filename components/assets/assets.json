@@ -19,6 +19,24 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "link": {
+      "type": "string"
+    },
+    "placement": {
+      "type": "enumeration",
+      "enum": [
+        "top",
+        "center",
+        "bottom"
+      ]
+    },
+    "styleClass": {
+      "type": "enumeration",
+      "enum": [
+        "shadow",
+        "mockup"
+      ]
     }
   }
 }

@@ -536,9 +536,6 @@
                 "id": {
                   "type": "string"
                 },
-                "content": {
-                  "type": "string"
-                },
                 "image": {
                   "required": [
                     "id",
@@ -663,9 +660,6 @@
               ],
               "properties": {
                 "id": {
-                  "type": "string"
-                },
-                "content": {
                   "type": "string"
                 },
                 "image": {

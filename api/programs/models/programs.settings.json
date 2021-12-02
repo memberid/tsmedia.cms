@@ -28,7 +28,10 @@
     },
     "type": {
       "type": "enumeration",
-      "enum": ["Programs", "Channels"]
+      "enum": [
+        "Programs",
+        "Channels"
+      ]
     },
     "description": {
       "type": "text"

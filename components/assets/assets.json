@@ -7,9 +7,6 @@
   },
   "options": {},
   "attributes": {
-    "content": {
-      "type": "text"
-    },
     "image": {
       "model": "file",
       "via": "related",

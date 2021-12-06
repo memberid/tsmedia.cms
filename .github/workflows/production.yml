@@ -2,7 +2,7 @@ name: PRODUCTION Deployment
 on: 
   push:
     branches:
-      - develop
+      - master
 
 jobs:
   production-tsmediacms:

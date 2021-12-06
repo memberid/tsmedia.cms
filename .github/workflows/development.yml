@@ -2,10 +2,10 @@ name: DEVELOPMENT Deployment
 on: 
   push:
     branches:
-      - master
+      - develop
 
 jobs:
-  master-tsmedia:
+  development-tsmediacms:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

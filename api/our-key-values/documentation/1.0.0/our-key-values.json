@@ -1,12 +1,12 @@
 {
   "paths": {
-    "/our-key-values": {
+    "/partners": {
       "get": {
         "deprecated": false,
-        "description": "Find all the our-key-values's records",
+        "description": "Find all the partners's records",
         "responses": {
           "200": {
-            "description": "Retrieve our-key-values document(s)",
+            "description": "Retrieve partners document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -51,9 +51,7 @@
           }
         },
         "summary": "",
-        "tags": [
-          "Our-key-values"
-        ],
+        "tags": ["partners"],
         "parameters": [
           {
             "name": "_limit",
@@ -195,10 +193,10 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single our-key-values record",
+        "description": "Update a single partners record",
         "responses": {
           "200": {
-            "description": "Retrieve our-key-values document(s)",
+            "description": "Retrieve partners document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -243,16 +241,14 @@
           }
         },
         "summary": "",
-        "tags": [
-          "Our-key-values"
-        ],
+        "tags": ["partners"],
         "requestBody": {
           "description": "",
           "required": true,
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewOur-key-values"
+                "$ref": "#/components/schemas/Newpartners"
               }
             }
           }
@@ -261,10 +257,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single our-key-values record",
+        "description": "Delete a single partners record",
         "responses": {
           "200": {
-            "description": "deletes a single our-key-values based on the ID supplied",
+            "description": "deletes a single partners based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -306,19 +302,15 @@
           }
         },
         "summary": "",
-        "tags": [
-          "Our-key-values"
-        ],
+        "tags": ["partners"],
         "parameters": []
       }
     }
   },
   "components": {
     "schemas": {
-      "Our-key-values": {
-        "required": [
-          "id"
-        ],
+      "partners": {
+        "required": ["id"],
         "properties": {
           "id": {
             "type": "string"
@@ -327,9 +319,7 @@
             "type": "array",
             "items": {
               "type": "object",
-              "required": [
-                "id"
-              ],
+              "required": ["id"],
               "properties": {
                 "id": {
                   "type": "string"
@@ -350,9 +340,7 @@
             "type": "array",
             "items": {
               "type": "object",
-              "required": [
-                "id"
-              ],
+              "required": ["id"],
               "properties": {
                 "id": {
                   "type": "string"
@@ -434,9 +422,7 @@
             "type": "array",
             "items": {
               "type": "object",
-              "required": [
-                "id"
-              ],
+              "required": ["id"],
               "properties": {
                 "id": {
                   "type": "string"
@@ -526,15 +512,13 @@
           }
         }
       },
-      "NewOur-key-values": {
+      "Newpartners": {
         "properties": {
           "ourKeyValues": {
             "type": "array",
             "items": {
               "type": "object",
-              "required": [
-                "id"
-              ],
+              "required": ["id"],
               "properties": {
                 "id": {
                   "type": "string"
@@ -555,9 +539,7 @@
             "type": "array",
             "items": {
               "type": "object",
-              "required": [
-                "id"
-              ],
+              "required": ["id"],
               "properties": {
                 "id": {
                   "type": "string"
@@ -639,9 +621,7 @@
             "type": "array",
             "items": {
               "type": "object",
-              "required": [
-                "id"
-              ],
+              "required": ["id"],
               "properties": {
                 "id": {
                   "type": "string"

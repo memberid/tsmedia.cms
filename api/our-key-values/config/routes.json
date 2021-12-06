@@ -2,24 +2,24 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/our-key-values",
-      "handler": "our-key-values.find",
+      "path": "/partners",
+      "handler": "partners.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/our-key-values",
-      "handler": "our-key-values.update",
+      "path": "/partners",
+      "handler": "partners.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/our-key-values",
-      "handler": "our-key-values.delete",
+      "path": "/partners",
+      "handler": "partners.delete",
       "config": {
         "policies": []
       }

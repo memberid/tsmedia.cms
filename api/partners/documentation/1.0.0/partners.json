@@ -10,10 +10,9 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Partners"
                   }
                 }
               }
@@ -51,7 +50,9 @@
           }
         },
         "summary": "",
-        "tags": ["partners"],
+        "tags": [
+          "Partners"
+        ],
         "parameters": [
           {
             "name": "_limit",
@@ -200,11 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Partners"
                 }
               }
             }
@@ -241,14 +238,16 @@
           }
         },
         "summary": "",
-        "tags": ["partners"],
+        "tags": [
+          "Partners"
+        ],
         "requestBody": {
           "description": "",
           "required": true,
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Newpartners"
+                "$ref": "#/components/schemas/NewPartners"
               }
             }
           }
@@ -302,15 +301,19 @@
           }
         },
         "summary": "",
-        "tags": ["partners"],
+        "tags": [
+          "Partners"
+        ],
         "parameters": []
       }
     }
   },
   "components": {
     "schemas": {
-      "partners": {
-        "required": ["id"],
+      "Partners": {
+        "required": [
+          "id"
+        ],
         "properties": {
           "id": {
             "type": "string"
@@ -319,7 +322,9 @@
             "type": "array",
             "items": {
               "type": "object",
-              "required": ["id"],
+              "required": [
+                "id"
+              ],
               "properties": {
                 "id": {
                   "type": "string"
@@ -340,7 +345,9 @@
             "type": "array",
             "items": {
               "type": "object",
-              "required": ["id"],
+              "required": [
+                "id"
+              ],
               "properties": {
                 "id": {
                   "type": "string"
@@ -422,7 +429,9 @@
             "type": "array",
             "items": {
               "type": "object",
-              "required": ["id"],
+              "required": [
+                "id"
+              ],
               "properties": {
                 "id": {
                   "type": "string"
@@ -512,13 +521,15 @@
           }
         }
       },
-      "Newpartners": {
+      "NewPartners": {
         "properties": {
           "ourKeyValues": {
             "type": "array",
             "items": {
               "type": "object",
-              "required": ["id"],
+              "required": [
+                "id"
+              ],
               "properties": {
                 "id": {
                   "type": "string"
@@ -539,7 +550,9 @@
             "type": "array",
             "items": {
               "type": "object",
-              "required": ["id"],
+              "required": [
+                "id"
+              ],
               "properties": {
                 "id": {
                   "type": "string"
@@ -621,7 +634,9 @@
             "type": "array",
             "items": {
               "type": "object",
-              "required": ["id"],
+              "required": [
+                "id"
+              ],
               "properties": {
                 "id": {
                   "type": "string"
@@ -719,5 +734,9 @@
       }
     }
   },
-  "tags": []
+  "tags": [
+    {
+      "name": "Partners"
+    }
+  ]
 }

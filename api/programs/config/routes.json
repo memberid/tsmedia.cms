@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/programs/:to",
+      "path": "/programs/:id",
       "handler": "programs.findOne",
       "config": {
         "policies": []

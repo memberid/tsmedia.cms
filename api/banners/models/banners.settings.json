@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "banners",
+  "info": {
+    "name": "Banners",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "shop": {
+      "type": "component",
+      "repeatable": true,
+      "component": "assets.banners"
+    }
+  }
+}

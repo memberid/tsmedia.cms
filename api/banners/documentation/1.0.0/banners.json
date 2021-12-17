@@ -395,6 +395,9 @@
                       "type": "string"
                     }
                   }
+                },
+                "link": {
+                  "type": "string"
                 }
               }
             }
@@ -484,6 +487,9 @@
                       "type": "string"
                     }
                   }
+                },
+                "link": {
+                  "type": "string"
                 }
               }
             }
